@@ -123,7 +123,7 @@ documentation for details about instrument and span updates.
 ### Added
 
 * Export RequestTracingMiddleware (#106)
-* Allow customisation of client span names (#111)
+* Allow customization of client span names (#111)
 
 ### Changed
 
@@ -201,7 +201,7 @@ documentation for details about instrument and span updates.
 
 ### Changed
 
-Note: optentelemetry `v0.12.x` uses tokio 1.0. See the
+Note: opentelemetry `v0.12.x` uses tokio 1.0. See the
 [updated examples](https://github.com/OutThereLabs/actix-web-opentelemetry/blob/e29c77312d6a906571286f78cc26ca72cf3a0b6f/examples/server.rs#L17-L40)
 for compatible setup until actix-web supports tokio 1.0.
 
@@ -244,7 +244,7 @@ as the default is now a no-op.
 
 ### Removed
 
-- Remove obsolute `UuidWildcardFormatter` as actix 3 supports match patterns #24
+- Remove obsolete `UuidWildcardFormatter` as actix 3 supports match patterns #24
 
 ### Fixed
 
