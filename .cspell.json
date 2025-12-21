@@ -4,6 +4,7 @@
     "language": "en,en-US",
     "useGitignore": true,
     "minWordLength": 4,
+    "import": ["https://cdn.jsdelivr.net/npm/@cspell/dict-people-names/cspell-ext.json"],
     "ignorePaths": [
         "target/**",
         "**.conf",
@@ -47,6 +48,7 @@
         "companies",
         "people-names",
         "rust",
+        "rust-crates",
         "software-tools",
         "softwareTerms"
     ],
@@ -57,45 +59,7 @@
         "semconv",
         "traceresponse",
         "tracepoint",
-        "tracepoints",
-        // people names
-        "Bhasin",
-        "Boddewyn",
-        "Cijo",
-        "Dirkjan",
-        "Grübel",
-        "Isobel",
-        "Kumar",
-        "Kühle",
-        "Lalit",
-        "Ochtman",
-        "Pato",
-        "Posa",
-        "Redelmeier",
-        "Sandaña",
-        "Tescher",
-        "Zhongyang",
-        //software tools
-        "ftrace",
-        "Logman",
-        "PerfView",
-        "StackDriver",
-        "Tracefmt",
-        "Tracelog",
-        // software terms
-        "msgpack",
-        "PKCS",
-        "unregisters",
-        //rust
-        "Actix",
-        "EventHeader",
-        "Prost",
-        "Reqwest",
-        "hyper-rustls",
-        "itertools",
-        "mvrv",
-        "thiserror",
-        "tracelogging"
+        "tracepoints"
     ],
     "enabledLanguageIds": [
         "jsonc",
