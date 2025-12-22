@@ -176,7 +176,7 @@ mod tests {
         let call_count = Rc::new(Cell::new(0));
         let call_count_clone = Rc::clone(&call_count);
 
-        // Wrapper clousure to capture call_count_clone
+        // Wrapper closure to capture call_count_clone
         let register_mock_reader_clousure =
             move |builder: MeterProviderBuilder, periodic_config: &str| {
                 call_count_clone.set(call_count_clone.get() + 1);

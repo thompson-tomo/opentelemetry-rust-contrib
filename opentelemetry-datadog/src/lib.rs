@@ -24,7 +24,7 @@
 //!
 //! This exporter therefore takes a different approach of naming the span with the name of the
 //! tracing provider, and using the span name to set the resource_name. This should in most cases
-//! lead to the behaviour that users expect.
+//! lead to the behavior that users expect.
 //!
 //! Datadog additionally has a span_type string that alters the rendering of the spans in the web UI.
 //! This can be set as the `span.type` OpenTelemetry span attribute.
@@ -36,7 +36,7 @@
 //! ## Performance
 //!
 //! For optimal performance, a batch exporter is recommended as the simple exporter will export
-//! each span synchronously on drop. The default batch exporter uses a dedicated thread for exprt,
+//! each span synchronously on drop. The default batch exporter uses a dedicated thread for export,
 //! but you can enable the async batch exporter with  [`rt-tokio`], [`rt-tokio-current-thread`]
 //! or [`rt-async-std`] features and specify a runtime on the pipeline to have a batch exporter
 //! configured for you automatically.
@@ -69,7 +69,7 @@
 //! `surf-client` feature is enabled. The surf http client will be used.
 //!
 //! Note that async http clients may need specific runtime otherwise it will panic. User should make
-//! sure the http client is running in appropriate runime.
+//! sure the http client is running in appropriate runtime.
 //!
 //! Users can always use their own http clients by implementing `HttpClient` trait.
 //!

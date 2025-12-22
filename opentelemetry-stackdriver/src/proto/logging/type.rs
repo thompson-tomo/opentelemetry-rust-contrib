@@ -39,7 +39,7 @@ pub struct HttpRequest {
     /// `"192.168.1.1"`, `"10.0.0.1:80"`, `"FE80::0202:B3FF:FE1E:8329"`.
     #[prost(string, tag = "13")]
     pub server_ip: ::prost::alloc::string::String,
-    /// The referer URL of the request, as defined in
+    /// The referrer URL of the request, as defined in
     /// [HTTP/1.1 Header Field
     /// Definitions](<https://datatracker.ietf.org/doc/html/rfc2616#section-14.36>).
     #[prost(string, tag = "8")]

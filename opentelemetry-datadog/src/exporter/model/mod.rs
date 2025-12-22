@@ -1,3 +1,5 @@
+// cSpell:words OAAAAAIHOAAAA AAAAAAAAAAM
+
 use crate::exporter::ModelConfig;
 use http::uri;
 use opentelemetry_sdk::{

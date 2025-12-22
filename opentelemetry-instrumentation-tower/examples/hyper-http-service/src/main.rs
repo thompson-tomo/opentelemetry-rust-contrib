@@ -14,7 +14,7 @@ const SERVICE_NAME: &str = "example-hyper-http-service";
 // if the metrics may be converted to Prometheus metrics.
 // Prometheus' query engine and compatible implementations
 // require ~4 data points / interval for range queries,
-// so queries ranging over 1m requre <= 15s scrape intervals.
+// so queries ranging over 1m require <= 15s scrape intervals.
 // OTEL SDKS also respect the env var `OTEL_METRIC_EXPORT_INTERVAL` (no underscore prefix).
 const _OTEL_METRIC_EXPORT_INTERVAL: Duration = Duration::from_secs(10);
 

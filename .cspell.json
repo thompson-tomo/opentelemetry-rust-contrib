@@ -7,17 +7,8 @@
     "import": ["https://cdn.jsdelivr.net/npm/@cspell/dict-people-names/cspell-ext.json"],
     "ignorePaths": [
         "target/**",
-        "**.conf",
-        "**.j2",
-        "**.json",
-        "**.proto",
-        "**.ps1",
-        "**.rs",
-        "**.toml",
-        "**.txt",
-        "**.yaml",
-        "Dockerfile",
-        "Makefile"
+        "**/src/proto/**",
+        "**.proto"
     ],
     "patterns" :[
         {
@@ -26,15 +17,30 @@
         },
         {
             "name": "CodeName",
-            "pattern": "/([~`])[^~`]*?\\1/x"
+            "pattern": "/([~`])[^~`]*?\\1/gmx"
         }
     ],
     // list of words to be ignored.  unlike `words` below, these won't be
     // suggested as corrections for misspelled words.
     "ignoreWords": [
+        "basicauth",
+        "errno",
+        "myprovider",
+        "nocapture",
         "otel",
+        "providername",
         "rustdoc",
-        "rustfilt"
+        "rustfilt",
+        "eastus",
+        "westus",
+        "myrolename",
+        "myns",
+        "myaccount",
+        "myattribute",
+        "_csver_",
+        "num_cpus",
+        "sharedlib",
+        "bincirc"
     ],
     // these are words that are always considered incorrect.
     "flagWords": [
@@ -46,6 +52,7 @@
     ],
     "dictionaries": [
         "companies",
+        "google",
         "people-names",
         "rust",
         "rust-crates",
@@ -57,20 +64,38 @@
     "words": [
         "francoposa",
         "semconv",
+        "eventname",
         "traceresponse",
+        "traceparent",
         "tracepoint",
-        "tracepoints"
+        "tracepoints",
+        "tracestate",
+
+        "appender",
+        "pprof",
+        "rustc",
+        "Genava",
+        "wstring",
+        "Wiremock",
+        "rcgen",
+        "repr",
+        "cbindgen",
+        "Uncategorized",
+        "dylib"
     ],
     "enabledLanguageIds": [
+        "dockerfile",
+        "json",
         "jsonc",
         "markdown",
-        "plaintext",
         "rust",
-        "shellscript"
+        "shellscript",
+        "toml",
+        "yaml"
     ],
     "languageSettings": [
         {
-            "languageId": "jsonc",
+            "languageId": "json, jsonc",
             "includeRegExpList": [
                 "CStyleComment"
             ]
@@ -88,10 +113,13 @@
             "includeRegExpList": [
                 "CStyleComment",
                 "strings"
+            ],
+            "ignoreRegExpList": [
+                "CodeName"
             ]
         },
         {
-            "languageId": "shellscript",
+            "languageId": "dockerfile, makefile, powershell, properties, shellscript, toml, yaml",
             "includeRegExpList": [
                 "/#.*/g"
             ]

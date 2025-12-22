@@ -268,7 +268,7 @@ impl InstrumentedClientRequest {
         self
     }
 
-    /// Customise the Span Name, for example to reduce cardinality
+    /// Customize the Span Name, for example to reduce cardinality
     ///
     /// Example:
     /// ```
