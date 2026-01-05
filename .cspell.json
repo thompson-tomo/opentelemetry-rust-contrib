@@ -25,6 +25,7 @@
     "ignoreWords": [
         "basicauth",
         "errno",
+        "francoposa",
         "myprovider",
         "nocapture",
         "otel",
@@ -62,7 +63,6 @@
     // these are words that are always correct and can be thought of as our
     // workspace dictionary.
     "words": [
-        "francoposa",
         "semconv",
         "eventname",
         "traceresponse",
@@ -71,17 +71,10 @@
         "tracepoints",
         "tracestate",
 
-        "appender",
-        "pprof",
         "rustc",
-        "Genava",
-        "wstring",
-        "Wiremock",
         "rcgen",
         "repr",
-        "cbindgen",
-        "Uncategorized",
-        "dylib"
+        "cbindgen"
     ],
     "enabledLanguageIds": [
         "dockerfile",
