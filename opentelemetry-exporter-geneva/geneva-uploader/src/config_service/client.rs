@@ -1,5 +1,4 @@
 // Geneva Config Client with TLS (PKCS#12) and Azure Workload Identity support TODO: Azure Arc support
-//cspell:words preconfigured_tls
 
 use base64::{engine::general_purpose, Engine as _};
 use reqwest::{
